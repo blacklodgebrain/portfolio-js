@@ -396,10 +396,17 @@
   margin-top: 20px;
 } 
 
+.frontImage {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.frontImage img {
+  object-fit: contain;
+}
+
 .logoContainer {
-  position: absolute;
-  top: 10px;
-  left: 10px;
   z-index: 999;
 }
 

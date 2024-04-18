@@ -7,19 +7,17 @@ import Header from "@/components/global/Header";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.box}>
         <Header />
 
         <h1 className={styles.h1}>Welcome,</h1>
 
         <p className={styles.p}>My name is Isabella Pelot, I am a graphic design student at North Idaho College in my first year. I am interested in all aspects of design and look forward to learning more in the future.</p>
 
-        <div className={styles.roundedBox}>
+        <div className={styles.frontImage}>
           <Image 
             src={Isabella} 
-            alt="Isabella" 
-            width={500} 
-            height={500} 
+            alt="Isabella"
+            fill
           />
         </div>
 
@@ -42,7 +40,6 @@ export default function Home() {
         </div>
 
         <footer className={styles.footer}><small>Copyright© Isabella Pelot 2024</small></footer>
-      </div>
     </main>
   );
 }

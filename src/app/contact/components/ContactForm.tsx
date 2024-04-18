@@ -26,7 +26,7 @@ const ContactForm = () => {
     }
 
     return (
-        <div>
+        <>
             {submission?.status ? (
                 <Alert variant="filled" severity={submission.status}>
                     {submission.message}
@@ -34,48 +34,54 @@ const ContactForm = () => {
             ) : null}
 
             <form className={styles.contactForm} action={handleSubmit}>
-            <Box sx={{pb: {xs: 1, md: 1}}}>
+                <StyledFormControl sx={{pb: {xs: 1, md: 1} }} >
                     <StyledTextField name="name" id="name-basic" label="Name" variant="outlined" type="text" />
-                </Box>
-                <Box sx={{pb: {xs: 1, md: 1}}}>
+                </StyledFormControl>
+                <StyledFormControl sx={{pb: {xs: 1, md: 1}}}>
                     <StyledTextField name="email" id="email-basic" label="Email" variant="outlined" type="email" />
-                </Box>
-                <Box sx={{pb: {xs: 1, md: 1}}}>
+                </StyledFormControl>
+                <StyledFormControl sx={{pb: {xs: 1, md: 1}}}>
                     <StyledTextArea name="message" id="message" placeholder="Enter message here!" minRows={3} />
-                </Box>
-                <StyledButton type="submit" variant="contained" color="secondary">Submit contact</StyledButton>
+                </StyledFormControl>
+                <StyledFormControl sx={{pb: {xs: 1, md: 1}}}>
+                    <StyledButton type="submit" variant="contained" color="secondary">Submit contact</StyledButton>
+                </StyledFormControl>
             </form>
-        </div>
+        </>
     )
 }
 
 export default ContactForm;
 
+const StyledFormControl = styled(Box)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
 const StyledTextField = styled(TextField)`
+    width: 100%;
     fieldset {
         flex-direction: column;
         align-items: center;
-        margin: 20px;
         padding: 20px;
         border-color: aliceblue;
         border-radius: 8px;
-        width: 200px;
         color: aliceblue;
+        width: 100%;
     }
 `
 
 const StyledTextArea = styled (TextareaAutosize)`
-    padding: 20px;
-    margin: 20px;
     border-color: aliceblue;
     border-radius: 8px;
     color: aliceblue;
     padding: 10px;
+    width: 100%;
 `
 
 const StyledButton = styled(Button) `
     align-items: center;
     background-color: #3b384f;
-    width: 200px;
-    margin: 20px;
+    width: 100%;
 `
