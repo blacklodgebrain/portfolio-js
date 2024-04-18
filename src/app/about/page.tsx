@@ -23,15 +23,15 @@ export default function About() {
         <h1>About Me</h1>
 
         <p>
-            Hi there! My name is Isabella Pelot, and I'm passionate about graphic design. My journey into the world of graphic design started when I first learned about it at the age 11.
+            Hi there! My name is Isabella Pelot, and I&#39;m passionate about graphic design. My journey into the world of graphic design started when I first learned about it at the age 11.
         </p>
 
         <p>
-            In 2021, I made a significant move from Atlanta, Georgia, to North Idaho. This transition marked my entrance into public school after being homeschooled for most of my life. It was during this time that I discovered North Idaho College's graphic design program, thanks to the guidance of my counselor.
+            In 2021, I made a significant move from Atlanta, Georgia, to North Idaho. This transition marked my entrance into public school after being homeschooled for most of my life. It was during this time that I discovered North Idaho College&#39;s graphic design program, thanks to the guidance of my counselor.
         </p>
 
         <p>
-            Currently, I'm enrolled in North Idaho College's graphic design program, where I'm eager to expand my knowledge and skills in the field. To me, design is more than just a profession—it's a creative journey that I'm excited to explore further.
+            Currently, I&#39;m enrolled in North Idaho College&#39;s graphic design program, where I&#39;m eager to expand my knowledge and skills in the field. To me, design is more than just a profession—it&#39;s a creative journey that I&#39;m excited to explore further.
         </p>
 
         <div className={styles.roundedBox}>
