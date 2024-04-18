@@ -1,94 +1,64 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Isabella from "./assets/_MG_1591.png";
+import Logo from "./assets/i_p_logo_white.png";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+      <div className={styles.box}>
+        <div className={styles.logoContainer}>
+          <Image 
+            src={Logo} 
+            alt="Logo" 
+            width={80} 
+            height={80} 
+          />
+        </div>
+
+        <div className={styles.navbar} id="navbar">
+          <a href="/page">Home</a>
+          <a href="/about">About Me</a>
+          <a href="portfolio_projects.html#Projects">Projects</a>
+          <a href="portfolio_contact.html#ContactMe">Contact</a>
+          <a href="portfolio_blog.html#Blog">Blog</a>
+          <a href="javascript:void(0);" className={styles.hamburger}>
+            <i className="fa fa-bars"></i>
           </a>
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <h1 className={styles.h1}>Welcome,</h1>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+        <p className={styles.p}>My name is Isabella Pelot, I am a graphic design student at North Idaho College in my first year. I am interested in all aspects of design and look forward to learning more in the future.</p>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+        <div className={styles.roundedBox}>
+          <Image 
+            src={Isabella} 
+            alt="Isabella" 
+            width={500} 
+            height={500} 
+          />
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+        <h4>Look around this site to:</h4>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <ul>
+          <li>Find out more about me.</li>
+          <li>See my work.</li>
+          <li>Get in contact with me.</li>
+        </ul>
+
+        <div className={styles.interests}>
+          <h2 className={styles.h2}>My Interests</h2>
+          <ul className={styles.ul}>
+            <li>Graphic Design</li>
+            <li>Photography</li>
+            <li>Web Development</li>
+            <li>Illustration</li>
+          </ul>
+        </div>
+
+        <footer className={styles.footer}><small>Copyright© Isabella Pelot 2024</small></footer>
       </div>
     </main>
   );
