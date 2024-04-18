@@ -34,7 +34,7 @@ export default function About() {
             Currently, I&#39;m enrolled in North Idaho College&#39;s graphic design program, where I&#39;m eager to expand my knowledge and skills in the field. To me, design is more than just a profession—it&#39;s a creative journey that I&#39;m excited to explore further.
         </p>
 
-        <div className={styles.roundedBox}>
+        <div className={styles.frontImage}>
             <Image src={Isabella} alt="Photograph of me." className={styles.me} />
         </div>
 
