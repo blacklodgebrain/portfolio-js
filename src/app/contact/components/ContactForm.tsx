@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "../../page.module.css"
-import { Alert, Box, Button, TextField, TextareaAutosize } from "@mui/material";
+import { Alert, Box, Button, TextField, TextareaAutosize, styled } from "@mui/material";
 
 const ContactForm = () => {
     const defaultSubmission = {
@@ -35,18 +35,47 @@ const ContactForm = () => {
 
             <form className={styles.contactForm} action={handleSubmit}>
             <Box sx={{pb: {xs: 1, md: 1}}}>
-                    <TextField name="name" id="name-basic" label="Name" variant="outlined" type="text" />
+                    <StyledTextField name="name" id="name-basic" label="Name" variant="outlined" type="text" />
                 </Box>
                 <Box sx={{pb: {xs: 1, md: 1}}}>
-                    <TextField name="email" id="email-basic" label="Email" variant="outlined" type="email" />
+                    <StyledTextField name="email" id="email-basic" label="Email" variant="outlined" type="email" />
                 </Box>
                 <Box sx={{pb: {xs: 1, md: 1}}}>
-                    <TextareaAutosize name="message" id="message" placeholder="Enter message here!" minRows={3} />
+                    <StyledTextArea name="message" id="message" placeholder="Enter message here!" minRows={3} />
                 </Box>
-                <Button type="submit" variant="contained" color="secondary">Submit contact</Button>
+                <StyledButton type="submit" variant="contained" color="secondary">Submit contact</StyledButton>
             </form>
         </div>
     )
 }
 
 export default ContactForm;
+
+const StyledTextField = styled(TextField)`
+    fieldset {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+        border-color: aliceblue;
+        border-radius: 8px;
+        width: 200px;
+        color: aliceblue;
+    }
+`
+
+const StyledTextArea = styled (TextareaAutosize)`
+    padding: 20px;
+    margin: 20px;
+    border-color: aliceblue;
+    border-radius: 8px;
+    color: aliceblue;
+    padding: 10px;
+`
+
+const StyledButton = styled(Button) `
+    align-items: center;
+    background-color: #3b384f;
+    width: 200px;
+    margin: 20px;
+`
