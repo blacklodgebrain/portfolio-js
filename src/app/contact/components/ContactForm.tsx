@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "../../app/page.module.css"
+import styles from "../../page.module.css"
 import { Alert, Box, Button, TextField, TextareaAutosize } from "@mui/material";
 
 const ContactForm = () => {

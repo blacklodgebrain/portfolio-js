@@ -1,31 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Isabella from "./assets/_MG_1591.png";
-import Logo from "./assets/i_p_logo_white.png";
+import Header from "@/components/global/Header";
+
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.box}>
-        <div className={styles.logoContainer}>
-          <Image 
-            src={Logo} 
-            alt="Logo" 
-            width={80} 
-            height={80} 
-          />
-        </div>
-
-        <div className={styles.navbar} id="navbar">
-          <a href="/page">Home</a>
-          <a href="/about">About Me</a>
-          <a href="portfolio_projects.html#Projects">Projects</a>
-          <a href="portfolio_contact.html#ContactMe">Contact</a>
-          <a href="portfolio_blog.html#Blog">Blog</a>
-          <a href="javascript:void(0);" className={styles.hamburger}>
-            <i className="fa fa-bars"></i>
-          </a>
-        </div>
+        <Header />
 
         <h1 className={styles.h1}>Welcome,</h1>
 
