@@ -21,13 +21,14 @@ const Header = () => {
             <a href="/page">Home</a>
             <a href="/about">About Me</a>
             <a href="portfolio_projects.html#Projects">Projects</a>
-            <a href="/contact">Contact</a>
+            <a href="/ContactForm">Contact</a>
             <a href="portfolio_blog.html#Blog">Blog</a>
             <a href="#" className={styles.hamburger}>
               <i className="fa fa-bars"></i>
             </a>
           </div>
         </Navbar>
+
     );
 }
 
