@@ -33,7 +33,7 @@ const ContactForm = () => {
                 </Alert>
             ) : null}
 
-            <form className={styles.contactForm} action={handleSubmit}>
+            <form classnameName={styles.contactForm} action={handleSubmit}>
                 <StyledFormControl sx={{pb: {xs: 1, md: 1} }} >
                     <StyledTextField name="name" id="name-basic" label="Name" variant="outlined" type="text" />
                 </StyledFormControl>

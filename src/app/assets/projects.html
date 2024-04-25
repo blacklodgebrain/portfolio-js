@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="i_p_logo_white.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Portfolio</title>
+    <style>
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+            border: 2px solid #ff00aa;
+            position: relative; 
+        }
+
+        .navbar {
+            background-color: rgb(0, 0, 0);
+            overflow: hidden;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ff00aa;
+            color: rgb(255, 255, 255);
+        }
+
+        .hamburger {
+            display: none;
+            float: right;
+            padding: 14px 16px;
+            cursor: pointer;
+            color: white;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .navbar.responsive .hamburger {
+                display: block;
+            }
+
+            .navbar.responsive a:not(.hamburger) {
+                display: none;
+            }
+
+            .navbar a {
+                float: none;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 601px) {
+            .navbar .hamburger {
+                display: none;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .me {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .projects {
+            margin-top: 20px;
+        }
+
+        .projects h2 {
+            text-align: center;
+        }
+
+        .project {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .project img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        .project a {
+            color: #ff00aa;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        .contact h2 {
+            text-align: center;
+        }
+
+        .contact p {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .illustrations{
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+        }
+
+        .logo {
+            max-width: 100px;
+            max-height: 100px;
+            margin: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div classname="box">
+        <img src="i_p_logo_white.png" alt="Logo" classname="logo" onclick="spinLogo()">
+
+        <div classname="navbar" id="navbar">
+            <a href="index.html#Home">Home</a>
+            <a href="portfolio_about_me.html#AboutMe">About Me</a>
+            <a href="portfolio_projects.html#Projects">Projects</a>
+            <a href="portfolio_contact.html#ContactMe">Contact</a>
+            <a href="portfolio_blog.html#Blog">Blog</a>
+            <a href="javascript:void(0);" classname="hamburger" onclick="toggleMenu()">
+                <i classname="fa fa-bars"></i>
+            </a>
+        </div> 
+
+        <div classname={styles.projects}>
+            <h2>Projects</h2>
+            <div classname={styles.project}>
+                <h3>Project 1: Swan's Hardware</h3>
+                <p>A complete workup of all the design needed for an imaginary business. Click <a href="./GDES_102_FALL2023_SWANS_HARDWARE_ISABELLA_PELOT.pdf" target="_blank">here</a> to view more details.</p>
+                <Image src="swan's.png" alt="Swan's logo.">
+            </div>
+
+            <div classname={styles.project}>
+                <h3>Project 2: Explore</h3>
+                <p>A cover for a fictitious magazine called "Explore".</p>
+                <Image src="GDES132_SPRING2024_EXPLORE_IPELOT_.png" alt="Explore magazine cover.">
+            </div>
+
+            <div classname={styles.project}>
+                <h3>Project 3: Single Cover</h3>
+                <p>A cover for the single "Boy Wonders" by Aztec Camera.</p>
+                <Image src="single-boy-wonders.png" alt="Single cover, boy wonders">
+            </div>
+
+            <div classname={styles.project}>
+                <h3>Project 4: Art Show Poster</h3>
+                <p>A poster for NIC's high school art show.</p>
+                <Image src="Art_Show_Poster.png" alt="Art Show Poster.">
+            </div>
+
+            <div classname={styles.project}>
+                <h3>Project 5: Bicicleta de Liberta</h3>
+                <p>A poster in the Italian Art Noveau style, Stile Liberta.</p>
+                <Image src="GDES_102_FALL2023_ARTNOUVEAU_ISABELLA_PELOT.png" alt="Bicicleta de Liberta">
+            </div>
+
+            <div classname={styles.project}>
+                <h3>Project 6: Automobubble</h3>
+                <p>An adverisement for an invention I created.</p>
+                <Image src="GDES_132_SPRING2024_CreativeInvention_IPELOT.png" alt="Automobubble">
+            </div>
+
+            <div classname={styles.project}>
+                <h3>Project 7: Retro Sci-Fi Book Cover</h3>
+                <p>A bookcover in the style of a mid-century sci-fi novel.</p>
+                <Image src="GDES131_FALL2023_6.1IndependentStudy_Poster_IPelot 1.png" alt="Retro sci-fi book cover.">
+            </div>
+
+            <div classname={styles.project}>
+                <h3>Project 8: Recipe Onesheet</h3>
+                <p>A recipe for a delicious Christmas classnameic, eggnog.</p>
+                <Image src="GDES131_FALL2023_5.1RecipeOnesheet_IPelot.png" alt="Eggnog recipe onesheet.">
+            </div>
+
+            <div classname={styles.project}>
+                <h3>Project 9: Siouxie and the Banshees Bookmark</h3>
+                <p>A bookmark decpicting some illuistrator keyboard shortcuts, in a Siouxie and the Banshees theme.</p>
+                <Image src="GDES131_FALL2023_3.1ShortcutsBookmark_IPelot.png" alt="Siouxie and the Banshees themed bookmark.">
+            </div>
+
+            <div classname={styles.project}>
+                <h3>Project 10: Hobby Logo</h3>
+                <p>A logo created for my hobby, jewelry making.</p>
+                <Image src="GDES131-100_FALL2023_1.1HobbyLogo_IPelot.png" alt="Hobby logo necklace.">
+            </div>
+
+            <div classname={styles.project}>
+                <h3>Project 11: Illustrative Set</h3>
+                <p>A set of figures used in a pattern.</p>
+                <Image src="GDES131_FALL2023_2.2IllustrativeSet_IPelot copy.png" alt="Thumbalina's World">
+            </div>
+            
+            
+            <h2>Illustrations</h2>
+            <div classname={styles.project}>
+                <Image src="Flower_Ladies.png" alt="Flower Ladies." className="illustrations">
+            </div>
+            <div classname={styles.project}>
+                <Image src="Underwater_Eye.png" alt="Underwater Eye." className="illustrations">
+            </div>
+            <div classname={styles.project}>
+                <Image src="WeeklyExercise4PROMPT_IPelot.png`" alt="Broom" className="illustrations">
+            </div>
+            <div classname={styles.project}>
+                <Image src="WeeklyExercise6ICECREAM_IPelot.png" alt="Ice Cream" className="illustrations">
+            </div>
+            <div classname={styles.project}>
+                <Image src="WeeklyExercise6PROMPT_IPelot.png" alt="Jelly Fish" className="illustrations">
+            </div>
+            <div classname={styles.project}>
+                <Image src="WeeklyExercise7PROMPT_IPelot.png" alt="Basket of Skulls" className="illustrations">
+            </div>
+            <div classname={styles.project}>
+                <Image src="WeeklyExercise9LEAVES_IPelot.png" alt="Leaves" className="illustrations">
+            </div>
+            <div classname={styles.project}>
+                <Image src="WeeklyExerciseCANDLE_IPelot.png" alt="Candle" className="illustrations">
+            </div>
+            <div classname={styles.project}>
+                <Image src="WeeklyExerciseCOFFEE_IPelot.png" alt="Coffee pixelated" className="illustrations">
+            </div>
+            <div classname={styles.project}>
+                <Image src="WeeklyExerciseWREATH_IPelot.png.png" alt="Wreath" className="illustrations">
+            </div>
+            <div classname={styles.project}>
+                <Image src="WeeklyExercisePROMPT_FirstinitialLastname.png" alt="Name Snowflake" className="illustrations">
+            </div>
+            <div classname={styles.project}>
+                <Image src="101_2.1AnimalMascot_IPelot copy.png" alt="Bat mascot" className="illustrations">
+            </div>
+            
+        </div>
+        <footer><small>Copyright© Isabella Pelot 2023</small></footer>
+    </div>
+
+    <script>
+        function spinLogo() {
+            var logo = document.querySelector('.logo');
+            logo.style.transition = 'transform 1s ease-in-out';
+            logo.style.transform = 'rotate(360deg)';
+            setTimeout(function () {
+                logo.style.transition = 'none';
+                logo.style.transform = 'none';
+            }, 1000);
+        }
+
+        function toggleMenu() {
+            var x = document.getElementById("navbar");
+            if (x.classnameName === "navbar") {
+                x.classnameName += " responsive";
+            } else {
+                x.classnameName = "navbar";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+
