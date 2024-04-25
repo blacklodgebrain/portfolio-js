@@ -163,38 +163,6 @@
   text-align: center;
 } */
 
-.ul {
-  padding: 10;
-  text-align: left;
-  margin: 20px;
-} 
-
-.interests {
-  margin: 20px;
-}
-
-.interests h2 {
-  text-align: center;
-}
-
-.interests ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-}
-
-.interests li {
-  flex: 1;
-  margin: 0 10px;
-  background-color: #ffffff;
-  color: #000000;
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-}
-
 .footer {
   text-align: center;
   margin-top: 20px;
