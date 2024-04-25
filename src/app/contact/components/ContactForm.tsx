@@ -2,6 +2,9 @@
 import { useState } from "react";
 import styles from "../../page.module.css"
 import { Alert, Box, Button, TextField, TextareaAutosize, styled } from "@mui/material";
+import GithubLogo from "@/app/assets/github-142-svgrepo-com.svg"
+import LinkedInLogo from "@/app/assets/linkedin-161-svgrepo-com.svg"
+import InstagramLogo from "@/app/assets/instagram-glyph-1-logo-svgrepo-com.svg"
 
 const ContactForm = () => {
     const defaultSubmission = {
@@ -33,7 +36,7 @@ const ContactForm = () => {
                 </Alert>
             ) : null}
 
-            <form classnameName={styles.contactForm} action={handleSubmit}>
+            <form className={styles.contactForm} action={handleSubmit}>
                 <StyledFormControl sx={{pb: {xs: 1, md: 1} }} >
                     <StyledTextField name="name" id="name-basic" label="Name" variant="outlined" type="text" />
                 </StyledFormControl>
@@ -47,6 +50,8 @@ const ContactForm = () => {
                     <StyledButton type="submit" variant="contained" color="secondary">Submit contact</StyledButton>
                 </StyledFormControl>
             </form>
+
+
         </>
     )
 }

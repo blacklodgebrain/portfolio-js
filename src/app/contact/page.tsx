@@ -7,7 +7,7 @@ import { Container, Grid } from "@mui/material";
 
 export default function Home() {
   return (
-    <main classnameName={styles.main}>
+    <main className={styles.main}>
        <Header />
       <Container maxWidth={"xl"}>
         <Grid container justifyContent={"center"} alignItems={"center"}>
@@ -16,7 +16,7 @@ export default function Home() {
           </Grid>
         </Grid>
       </Container>
-      <footer classnameName={styles.footer}><small>Copyright© Isabella Pelot 2024</small></footer>
+      <footer className={styles.footer}><small>Copyright© Isabella Pelot 2024</small></footer>
     </main>
   );
 }

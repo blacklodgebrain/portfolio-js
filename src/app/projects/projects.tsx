@@ -2,6 +2,7 @@ import styles from "page.module.css"
 import Image from "next/image";
 
 // All my images
+//projects
 import SwansImage from "@/app/assets/swans.png";
 import ExploreIPelot from "@/app/assets/GDES132_SPRING2024_EXPLORE_IPELOT_.png"
 import AztecCamera from "@/app/assets/single-boy-wonders.png"
@@ -17,6 +18,7 @@ import GlobalHarmony from "@/app/assets/GlobalHarmony_IsabellaPelot.png"
 import WhatIsDesign from "@/app/assets/WhatGDMeans_IsabellaPelot.png"
 import Bauhaus from "@/app/assets/GDES_132_SPRING2024_2.1AlbumCover_IPelot.png"
 
+//illustrations
 import FlowerLadies from "@/app/assets/Flower_Ladies.png"
 import UnderwaterEye from "@/app/assets/Underwater_Eye.png"
 import Broom from "@/app/assets/WeeklyExercise4PROMPT_IPelot.png"
