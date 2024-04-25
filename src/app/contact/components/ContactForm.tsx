@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
-import styles from "../../page.module.css"
+import styles from "../contact.module.css"
 import { Alert, Box, Button, TextField, TextareaAutosize, styled } from "@mui/material";
+import Image from "next/image"
 import GithubLogo from "@/app/assets/github-142-svgrepo-com.svg"
 import LinkedInLogo from "@/app/assets/linkedin-161-svgrepo-com.svg"
 import InstagramLogo from "@/app/assets/instagram-glyph-1-logo-svgrepo-com.svg"
@@ -51,7 +52,24 @@ const ContactForm = () => {
                 </StyledFormControl>
             </form>
 
-
+            <div className={styles.socialRow}>
+            <a href="https://github.com/blacklodgebrain" target="_blank" rel="noopener noreferrer">
+                    <div style={{position: "relative", width: "200px", height: "150px"}}>
+                        <Image src={GithubLogo} alt="Github logo." fill style={{objectFit: "contain"}} />
+                    </div>
+            </a>
+            <a href="https://www.linkedin.com/in/isabella-pelot-a85207292" target="_blank" rel="noopener noreferrer">
+                    <div style={{position: "relative", width: "200px", height: "150px"}}>
+                        <Image src={LinkedInLogo} alt="LinkedIn logo." fill style={{objectFit: "contain"}} />
+                    </div>
+            </a>
+            <a href="https://www.instagram.com/isabella.pelot/" target="_blank" rel="noopener noreferrer">
+                    <div style={{position: "relative", width: "200px", height: "150px"}}>
+                        <Image src={InstagramLogo} alt="Instagram logo." fill style={{objectFit: "contain"}} />
+                    </div>
+            </a>
+        </div>
+        <p>Email me, or check out my LinkedIn profile at Isabella Pelot, my Instagram at isabella.pelot and my Github at blacklodgebrain.</p>
         </>
     )
 }

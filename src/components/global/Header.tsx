@@ -18,7 +18,7 @@ const Header = () => {
           </div>
 
           <div className={styles.navbar} id="navbar">
-            <a href="/page">Home</a>
+            <a href="/">Home</a>
             <a href="/about">About Me</a>
             <a href="/projects">Projects</a>
             <a href="/contact">Contact</a>
