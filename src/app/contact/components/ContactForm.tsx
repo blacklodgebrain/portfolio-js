@@ -84,6 +84,9 @@ const StyledFormControl = styled(Box)`
 
 const StyledTextField = styled(TextField)`
     width: 100%;
+    input {
+        color: aliceblue;
+    }
     fieldset {
         flex-direction: column;
         align-items: center;

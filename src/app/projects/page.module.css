@@ -131,19 +131,19 @@
 }
 
 .h1 {
-  padding: 20px;
   text-align: left;
   font-family: Orbitron;
   font-size: 75px;
   max-width: 100%;
 } 
 
-.h2 {
-  padding: 20px;
+.h3 {
+  text-align: left;
+  font-family: Caviar Dreams;
 }
 
 .p {
-  text-align: left;
+  text-align: center;
 }
 
 .roundedBox {
@@ -167,23 +167,3 @@
   text-align: center;
   margin-top: 20px;
 } 
-
-.frontImage {
-  width: 500px;
-  height: 500px;
-  position: relative;
-}
-
-.frontImage img {
-  object-fit: contain;
-}
-
-.logoContainer {
-  z-index: 999;
-}
-
-.logo {
-  max-width: 80px;
-  cursor: pointer;
-}
-

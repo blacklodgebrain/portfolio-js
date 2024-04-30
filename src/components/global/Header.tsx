@@ -20,7 +20,7 @@ const Header = () => {
           <div className={styles.navbar} id="navbar">
             <a href="/">Home</a>
             <a href="/about">About Me</a>
-            <a href="/projects">Projects</a>
+            <a href="/projects">Portfolio</a>
             <a href="/contact">Contact</a>
             <a href="#" className={styles.hamburger}>
               <i className="fa fa-bars"></i>
