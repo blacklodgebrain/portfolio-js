@@ -39,7 +39,7 @@ export default function Projects() {
         <>
         <Header />
         <main className={styles.main}>
-            <div className={styles.projects}>
+            <div className={styles.project}>
                 <h1 className={styles.h1}>Portfolio</h1>
                 <h2 className={styles.h2}>Projects</h2>
                 <div className={styles.project}>

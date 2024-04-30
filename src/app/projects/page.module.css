@@ -1,23 +1,9 @@
 .main {
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: flex-start; /* Align items to the start of the cross axis (top) */
+  justify-content: center; 
+  align-items: flex-start;
   padding: 20rem;
   min-height: 100vh;
-}
-
-.description {
-  max-width: 50%; /* Take up 50% of the container width */
-  padding-right: 20px; /* Add spacing between text and image */
-}
-
-.frontImage {
-  max-width: 50%; /* Take up 50% of the container width */
-}
-
-.frontImage img {
-  max-width: 100%; /* Ensure the image takes up the full width of its container */
-  height: auto; /* Maintain aspect ratio */
 }
 
 .h1 {
@@ -28,140 +14,15 @@
   max-width: 100%;
 }
 
-.p {
+.h2 {
   text-align: left;
-}
-
-/* body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: rgb(255, 255, 255);
-  background-color: #000000;
-  margin: 0;
-  padding: 0;
-} */
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: right;
   font-family: Caviar Dreams;
-  font-style: normal;
-  font-weight: 500;
 }
-
-.navbar a {
-  color: aliceblue;
-  text-decoration: none;
-  padding: 14px 16px;
-}
-
-.mobile-navbar {
-  display: none;
-}
-
-.hamburger-menu {
-  display: none;
-  float: right;
-  cursor: pointer;
-}
-
-@media only screen and (max-width: 600px) {
-  .navbar {
-      justify-content: flex-end;
-  }
-
-  .navbar a {
-      display: none; 
-  }
-
-  .hamburger-menu {
-      display: block; 
-  }
-
-  .mobile-navbar.open {
-      display: block; 
-      flex-direction: column; 
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: #3b384f;
-      width: 50%;
-      height: 100vh;
-      transition: all 0.3s ease;
-      font-family: kohinoor-bangla, sans-serif;
-      font-weight: 300;
-  }
-
-  .mobile-navbar.open a[href="index.html#Home"] {
-      margin-top: 50px; 
-  }
-
-
-  .close-btn {
-      background-color: white;
-      color: #3b384f;
-      border: none;
-      font-size: 16px;
-      cursor: pointer;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 2;
-  }
-
-
-  .mobile-navbar a {
-      display: block;
-      color: aliceblue;
-      padding: 10px 30px;
-      text-decoration: none;
-  }
-}
-
-@media only screen and (min-width: 601px) {
-  .navbar .hamburger {
-      display: none; 
-  }
-}
-
-.h1 {
-  text-align: left;
-  font-family: Orbitron;
-  font-size: 75px;
-  max-width: 100%;
-} 
 
 .h3 {
   text-align: left;
   font-family: Caviar Dreams;
 }
-
-.p {
-  text-align: center;
-}
-
-.roundedBox {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  width: 80%;
-  max-width: 500px;
-  border-radius: 20px;
-  justify-content: right;
-  align-items: right;
-  margin-top: 20px;
-  box-sizing: border-box;
-}
-
-/* h4 {
-  text-align: center;
-} */
 
 .footer {
   text-align: center;
