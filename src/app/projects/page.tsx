@@ -1,4 +1,4 @@
-import styles from "../page.module.css"
+import styles from "./page.module.css"
 import Image from "next/image";
 import Header from "@/components/global/Header";
 
@@ -35,13 +35,130 @@ import Bat from "@/app/assets/101_2.1AnimalMascot_IPelot copy.png"
 
 
 export default function Projects() {
+    const sections = [
+        {
+            id: "projects",
+            label: "Projects",
+            gallery:[
+                {
+                    title: "Project 1: Swan's Hardware",
+                    description: 'My super cool swan project....',
+                    src: SwansImage,
+                    width: 200,
+                    height: 200,
+                    alt: "Swan's logo.",
+                },
+
+                {
+                    src: ExploreIPelot,
+                    width: 200,
+                    height: 200,
+                    alt: "Explore magazine cover.",
+                },
+                {
+                    src: AztecCamera,
+                    width: 200,
+                    height: 200,
+                    alt: "Single cover, Aztec Camera.",
+                },
+                {
+                    src: ArtShowPoster,
+                    width: 200,
+                    height: 200,
+                    alt: "Art Show Poster",
+                },
+                {
+                    src: BicicletaDeLiberta,
+                    width: 200,
+                    height: 200,
+                    alt: "Italian art noveau poster, woman on bicycle.",
+                },
+                {
+                    src: Automobubble,
+                    width: 200,
+                    height: 200,
+                    alt: "Woman floating in bubble ad poster.",
+                },
+                {
+                    src: BookCover,
+                    width: 200,
+                    height: 200,
+                    alt: "Retro sci-fi book cover.",
+                },
+                {
+                    src: RecipeOnesheet,
+                    width: 200,
+                    height: 200,
+                    alt: "Eggnog recipe onesheet.",
+                },
+                {
+                    src: Bookmark,
+                    width: 200,
+                    height: 200,
+                    alt: "Siouxie Sioux Adobe Illustrator shortcuts themed bookmark.",
+                },
+                {
+                    src: HobbyLogo,
+                    width: 200,
+                    height: 200,
+                    alt: "Jewelry making themed hobby logo.",
+                },
+                {
+                    src: IllustrativeSet,
+                    width: 200,
+                    height: 200,
+                    alt: "Thumbelina themed illuistrative set.",
+                },
+                {
+                    src: GlobalHarmony,
+                    width: 200,
+                    height: 200,
+                    alt: "Global Harmony movie poster.",
+                },
+                {
+                    src: WhatIsDesign,
+                    width: 200,
+                    height: 200,
+                    alt: "What is design? poster.",
+                },
+                {
+                    src: Bauhaus,
+                    width: 200,
+                    height: 200,
+                    alt: "Single cover, All We Ever Wanted Was Everything by Bauhaus.",
+                },
+            ]
+        }
+    ]
     return (
         <>
         <Header />
         <main className={styles.main}>
-            <div className={styles.project}>
+            <div className={styles.sectionWrapper}>
                 <h1 className={styles.h1}>Portfolio</h1>
-                <h2 className={styles.h2}>Projects</h2>
+
+                {sections.map((section) => {
+                    return (
+                        <div className={styles.section}>
+                            <h2 className={styles.h2}>Projects</h2>
+                            <div className={styles.gallery}>
+                                {section.gallery.map((image) => {
+                                    return (
+                                        <div className={styles.project}>
+                                            <h3 className={styles.h3}>{image?.title}</h3>
+                                            <p className={styles.imageDescription}>{image?.description}</p>
+                                            <div style={{position: "relative", width: "300px", height: "300px"}}>
+                                                <Image src={image.src} alt={image.alt} fill style={{objectFit: "contain"}} />
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+                            </div>  
+                        </div>
+                    )
+                })}
+
+                
                 <div className={styles.project}>
                     <h3 className={styles.h3}>Project 1: Swan's Hardware</h3>
                     <div style={{position: "relative", width: "200px", height: "150px"}}>
@@ -210,11 +327,12 @@ export default function Projects() {
                 </div>
             </div>
 
+            
+            </main>
+
             <footer className={styles.footer}>
                 <small>Copyright© Isabella Pelot 2024</small>
             </footer>
-            </main>
-            </>
+        </>
     )
-    
 }

@@ -2,8 +2,11 @@
   display: flex;
   justify-content: center; 
   align-items: flex-start;
-  padding: 20rem;
   min-height: 100vh;
+  flex-direction: row;
+  width: 100%;
+  margin: 100px;
+  flex-wrap: wrap;
 }
 
 .h1 {
@@ -22,6 +25,26 @@
 .h3 {
   text-align: left;
   font-family: Caviar Dreams;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  max-width: 340px;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #333;
 }
 
 .footer {
