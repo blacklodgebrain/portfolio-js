@@ -139,12 +139,12 @@ export default function Projects() {
 
                 {sections.map((section) => {
                     return (
-                        <div className={styles.section}>
+                        <div key={`section-${section.id}`} className={styles.section}>
                             <h2 className={styles.h2}>Projects</h2>
                             <div className={styles.gallery}>
-                                {section.gallery.map((image) => {
+                                {section.gallery.map((image, index) => {
                                     return (
-                                        <div className={styles.project}>
+                                        <div key={`gallery-${index}`} className={styles.project}>
                                             <h3 className={styles.h3}>{image?.title}</h3>
                                             <p className={styles.imageDescription}>{image?.description}</p>
                                             <div style={{position: "relative", width: "300px", height: "300px"}}>
@@ -156,9 +156,9 @@ export default function Projects() {
                             </div>  
                         </div>
                     )
-                })}
-            
-            </main>
+                })};
+            </div>
+        </main>
 
             <footer className={styles.footer}>
                 <small>Copyright© Isabella Pelot 2024</small>
