@@ -10,7 +10,7 @@ export default function Home() {
       <div className={styles.description}>
         <h1 className={styles.h1}>Welcome,</h1>
         <p className={styles.p}>
-          My name is Isabella Pelot, I am a graphic design student at North Idaho College in my first year. I am interested in all aspects of design and look forward to learning more in the future.
+          My name is Isabella Pelot, I am a graphic design student at North Idaho College in my second year. I am interested in all aspects of design and look forward to learning more in the future.
         </p>
       </div>
       <div className={styles.frontImage}>
