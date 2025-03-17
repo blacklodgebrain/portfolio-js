@@ -35,6 +35,7 @@ import Bat from "@/app/assets/101_2.1AnimalMascot_IPelot copy.png"
 import Perfection from "@/app/assets/GDES_120_SPRING2024_YOUCANQUOTEME_ISABELLA_PELOT [Recovered].jpg"
 import CLEO from "@/app/assets/GDES_222_FALL2024_PKG_ONEPAGE_ISABELLA_PELOT.png"
 import Ragu from "GDES_222_FALL2024_AD_DRAFT_ISABELLA_PELOT.png"
+import Bloomsday from "GDES_271_FALL2024_BLOOMSDAY_ISABELLA_PELOT (1).png"
 
 
 
@@ -149,6 +150,12 @@ export default function Projects() {
                     height: 200,
                     alt: "Ragu Del Veneto pasta sauce ad.",
                 },
+                {
+                    src: Bloomsday,
+                    width: 200,
+                    height: 200,
+                    alt: "Bloomsday t-shirt design.",
+                },
             ]
         }
     ]
@@ -178,7 +185,7 @@ export default function Projects() {
                             </div>  
                         </div>
                     )
-                })};
+                })}
             </div>
         </main>
 
