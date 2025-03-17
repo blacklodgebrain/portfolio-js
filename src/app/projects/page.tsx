@@ -32,6 +32,7 @@ import Coffee from "@/app/assets/WeeklyExerciseCOFFEE_IPelot.png"
 import Wreath from "@/app/assets/WeeklyExerciseWREATH_IPelot.png.png"
 import NameSnowflake from "@/app/assets/WeeklyExercisePROMPT_FirstinitialLastname.png"
 import Bat from "@/app/assets/101_2.1AnimalMascot_IPelot copy.png"
+import Perfection from "@/app/assets/GDES_120_SPRING2024_YOUCANQUOTEME_ISABELLA_PELOT [Recovered].jpg"
 
 
 export default function Projects() {
@@ -126,6 +127,12 @@ export default function Projects() {
                     width: 200,
                     height: 200,
                     alt: "Single cover, All We Ever Wanted Was Everything by Bauhaus.",
+                },
+                {
+                    src: Perfection,
+                    width: 200,
+                    height: 200,
+                    alt: "Salvador Dali quote poster.",
                 },
             ]
         }
