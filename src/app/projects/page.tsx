@@ -33,6 +33,7 @@ import Wreath from "@/app/assets/WeeklyExerciseWREATH_IPelot.png.png"
 import NameSnowflake from "@/app/assets/WeeklyExercisePROMPT_FirstinitialLastname.png"
 import Bat from "@/app/assets/101_2.1AnimalMascot_IPelot copy.png"
 import Perfection from "@/app/assets/GDES_120_SPRING2024_YOUCANQUOTEME_ISABELLA_PELOT [Recovered].jpg"
+import CLEO from "@/app/assets/GDES_222_FALL2024_PKG_ONEPAGE_ISABELLA_PELOT.png"
 
 
 export default function Projects() {
@@ -133,6 +134,12 @@ export default function Projects() {
                     width: 200,
                     height: 200,
                     alt: "Salvador Dali quote poster.",
+                },
+                {
+                    src: CLEO,
+                    width: 200,
+                    height: 200,
+                    alt: "CLEO eyeliner one page.",
                 },
             ]
         }
