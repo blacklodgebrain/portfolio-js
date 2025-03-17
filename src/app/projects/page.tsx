@@ -34,6 +34,8 @@ import NameSnowflake from "@/app/assets/WeeklyExercisePROMPT_FirstinitialLastnam
 import Bat from "@/app/assets/101_2.1AnimalMascot_IPelot copy.png"
 import Perfection from "@/app/assets/GDES_120_SPRING2024_YOUCANQUOTEME_ISABELLA_PELOT [Recovered].jpg"
 import CLEO from "@/app/assets/GDES_222_FALL2024_PKG_ONEPAGE_ISABELLA_PELOT.png"
+import Ragu from "GDES_222_FALL2024_AD_DRAFT_ISABELLA_PELOT.png"
+
 
 
 export default function Projects() {
@@ -140,6 +142,12 @@ export default function Projects() {
                     width: 200,
                     height: 200,
                     alt: "CLEO eyeliner one page.",
+                },
+                {
+                    src: Ragu,
+                    width: 200,
+                    height: 200,
+                    alt: "Ragu Del Veneto pasta sauce ad.",
                 },
             ]
         }
