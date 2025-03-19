@@ -36,6 +36,7 @@ import Perfection from "@/app/assets/GDES_120_SPRING2024_YOUCANQUOTEME_ISABELLA_
 import CLEO from "@/app/assets/GDES_222_FALL2024_PKG_ONEPAGE_ISABELLA_PELOT.png"
 import Ragu from "GDES_222_FALL2024_AD_DRAFT_ISABELLA_PELOT.png"
 import Bloomsday from "GDES_271_FALL2024_BLOOMSDAY_ISABELLA_PELOT (1).png"
+import Cat from "GDES_271_FALL2024_99DESIGNS2_ISABELLA_PELOT (1)_V2 BW copy"
 
 
 
@@ -155,6 +156,12 @@ export default function Projects() {
                     width: 200,
                     height: 200,
                     alt: "Bloomsday t-shirt design.",
+                },
+                {
+                    src: Cat,
+                    width: 200,
+                    height: 200,
+                    alt: "Cat's Out of the Bag Logo Incontext.",
                 },
             ]
         }
