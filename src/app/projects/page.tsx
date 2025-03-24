@@ -19,6 +19,12 @@ import IllustrativeSet from "@/app/assets/GDES131_FALL2023_2.2IllustrativeSet_IP
 import GlobalHarmony from "@/app/assets/GlobalHarmony_IsabellaPelot.png"
 import WhatIsDesign from "@/app/assets/WhatGDMeans_IsabellaPelot.png"
 import Bauhaus from "@/app/assets/GDES_132_SPRING2024_2.1AlbumCover_IPelot.png"
+import Perfection from "@/app/assets/GDES_120_SPRING2024_YOUCANQUOTEME_ISABELLA_PELOT [Recovered].jpg"
+import CLEO from "@/app/assets/GDES_222_FALL2024_PKG_ONEPAGE_ISABELLA_PELOT.png"
+import Ragu from "@/app/assets/GDES_222_FALL2024_AD_DRAFT_ISABELLA_PELOT.png"
+import Bloomsday from "@/app/assets/GDES_271_FALL2024_BLOOMSDAY_ISABELLA_PELOT (1).png"
+import Cat from "@/app/assets/GDES_271_FALL2024_99DESIGNS2_ISABELLA_PELOT (1)_V2 BW copy"
+import Lady from "@/app/assets/Free_Key_Chain_Mockup_1.png"
 
 //illustrations
 import FlowerLadies from "@/app/assets/Flower_Ladies.png"
@@ -32,12 +38,7 @@ import Coffee from "@/app/assets/WeeklyExerciseCOFFEE_IPelot.png"
 import Wreath from "@/app/assets/WeeklyExerciseWREATH_IPelot.png.png"
 import NameSnowflake from "@/app/assets/WeeklyExercisePROMPT_FirstinitialLastname.png"
 import Bat from "@/app/assets/101_2.1AnimalMascot_IPelot copy.png"
-import Perfection from "@/app/assets/GDES_120_SPRING2024_YOUCANQUOTEME_ISABELLA_PELOT [Recovered].jpg"
-import CLEO from "@/app/assets/GDES_222_FALL2024_PKG_ONEPAGE_ISABELLA_PELOT.png"
-import Ragu from "GDES_222_FALL2024_AD_DRAFT_ISABELLA_PELOT.png"
-import Bloomsday from "GDES_271_FALL2024_BLOOMSDAY_ISABELLA_PELOT (1).png"
-import Cat from "GDES_271_FALL2024_99DESIGNS2_ISABELLA_PELOT (1)_V2 BW copy"
-import Lady from "Free_Key_Chain_Mockup_1.png"
+
 
 
 
