@@ -23,7 +23,7 @@ import Perfection from "@/app/assets/GDES_120_SPRING2024_YOUCANQUOTEME_ISABELLA_
 import CLEO from "@/app/assets/GDES_222_FALL2024_PKG_ONEPAGE_ISABELLA_PELOT.png"
 import Ragu from "@/app/assets/GDES_222_FALL2024_AD_DRAFT_ISABELLA_PELOT.png"
 import Bloomsday from "@/app/assets/GDES_271_FALL2024_BLOOMSDAY_ISABELLA_PELOT (1).png"
-import Cat from "@/app/assets/GDES_271_FALL2024_99DESIGNS2_ISABELLA_PELOT (1)_V2 BW copy"
+import Cat from "@/app/assets/GDES_271_FALL2024_99DESIGNS2_ISABELLA_PELOT (1)_V2 BW copy.png"
 import Lady from "@/app/assets/Free_Key_Chain_Mockup_1.png"
 
 //illustrations
