@@ -37,6 +37,7 @@ import CLEO from "@/app/assets/GDES_222_FALL2024_PKG_ONEPAGE_ISABELLA_PELOT.png"
 import Ragu from "GDES_222_FALL2024_AD_DRAFT_ISABELLA_PELOT.png"
 import Bloomsday from "GDES_271_FALL2024_BLOOMSDAY_ISABELLA_PELOT (1).png"
 import Cat from "GDES_271_FALL2024_99DESIGNS2_ISABELLA_PELOT (1)_V2 BW copy"
+import Lady from "Free_Key_Chain_Mockup_1.png"
 
 
 
@@ -162,6 +163,12 @@ export default function Projects() {
                     width: 200,
                     height: 200,
                     alt: "Cat's Out of the Bag Logo Incontext.",
+                },
+                {
+                    src: Lady,
+                    width: 200,
+                    height: 200,
+                    alt: "Sunhat in context.",
                 },
             ]
         }
